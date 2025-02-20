@@ -30,11 +30,11 @@ This repository is designed to test `terragrunt run-all` with an **S3 backend** 
 │       │   ├── terragrunt.hcl
 │       ├── unit2/
 │           ├── terragrunt.hcl
-├── terragrunt.hcl
+├── root.hcl
 ```
 - **`modules/`** – Contains reusable Terraform modules.
 - **`envs/dev/` & `envs/prod/`** – Environment-specific configurations with `terragrunt.hcl`.
-- **`terragrunt.hcl` (root)** – dynamically generates the S3 backend configuration (`backend.tf`) using `BACKEND_BUCKET_NAME` and `BACKEND_DYNAMODB_TABLE_NAME` shell variables.
+- **`root.hcl`** – dynamically generates the S3 backend configuration (`backend.tf`) using `BACKEND_BUCKET_NAME` and `BACKEND_DYNAMODB_TABLE_NAME` shell variables.
 
 ## 🛠 Requirements
  - Terraform & Terragrunt installed
