@@ -1,6 +1,6 @@
-resource "null_resource" "unit3" {
+resource "null_resource" "unit2" {
   provisioner "local-exec" {
-    command = "echo Unit 3 executed"
+    command = "echo Unit 2 executed"
   }
 }
 
