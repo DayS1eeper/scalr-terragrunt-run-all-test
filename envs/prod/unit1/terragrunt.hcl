@@ -1,8 +1,7 @@
-include {
-  path = find_in_parent_folders()
+include "root" {
+  path = find_in_parent_folders("root.hcl")
 }
 
 terraform {
-  source = "${get_repo_root()}/modules/unit1"
+  source = "${dirname(find_in_parent_folders("root.hcl"))}/modules/unit1"
 }
-
